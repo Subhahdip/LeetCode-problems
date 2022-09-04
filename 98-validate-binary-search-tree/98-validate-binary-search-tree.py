@@ -15,7 +15,7 @@ class Solution:
                 return
             inorder(root.left)
             if root.val in temp:
-                temp.append(-99999999999)
+                temp.append(temp[0] - 1)
                 return
             temp.append(root.val)
             inorder(root.right)
